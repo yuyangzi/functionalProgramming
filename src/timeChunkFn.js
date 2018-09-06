@@ -14,10 +14,10 @@ const timeChunk = function (list, fn, count = 1) {
     const start = function () {
         // 对执行函数逐个进行调用
         for (let i = 0; i < Math.min(count, list.length); i++) {
-            insertList = list.shift()
+            insertList = list.shift();
             fn(insertList)
         }
-    }
+    };
     return function () {
         timer = setInterval(() => {
             if (list.length === 0) {
@@ -26,15 +26,15 @@ const timeChunk = function (list, fn, count = 1) {
             start()
         }, 200)
     }
-}
+};
 // 分时函数测试
-const arr = []
+const arr = [];
 for (let i = 0; i < 94; i++) {
     arr.push(i)
 }
 const renderList = timeChunk(arr, function (data) {
-    let div = document.createElement('div')
-    div.innerHTML = data + 1
+    let div = document.createElement('div');
+    div.innerHTML = data + 1;
     document.body.appendChild(div)
-}, 20)
-renderList()
+}, 20);
+renderList();
