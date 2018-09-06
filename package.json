@@ -1,0 +1,14 @@
+{
+  "name": "functional_programming",
+  "version": "1.0.0",
+  "description": "函数式编程的各种实现",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "functionalProgramming"
+  ],
+  "author": "wangyiming19950222@gmail.com",
+  "license": "MIT"
+}
